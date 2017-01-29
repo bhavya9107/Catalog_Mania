@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-deep_purple.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type="text/css">
@@ -112,14 +113,14 @@
     <div style="position: absolute; z-index: 999; left: 5px; margin-top: 40px; margin-right: 5px; color: white;">
     <img src="{{ login_session['picture'] }}" style="width: 50px; height: 50px; border-radius: 50%;">
         <a href="/disconnect">
-        <button class="mdl-button mdl-js-button mdl-js-button btn btn-primary" style="color: white;">
+        <button type="button" class="mdl-button mdl-js-button mdl-js-button btn btn-primary" style="color: white;">
         Logout
         </button> 
     </a>
     </div>
     {% else %}
         <a href="/login">
-        <button class="mdl-button mdl-js-button mdl-js-button btn btn-primary" style="position: absolute; z-index: 999; left: 5px; margin-top: 40px; margin-right: 5px; color: white;">
+        <button type="button" class="mdl-button mdl-js-button mdl-js-button btn btn-primary" style="position: absolute; z-index: 999; left: 5px; margin-top: 40px; margin-right: 5px; color: white;">
         Login
         </button> 
         </a>
